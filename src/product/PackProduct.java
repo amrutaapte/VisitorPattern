@@ -1,3 +1,9 @@
+/*
+ * packProduct represents all products that have pack or volume prices as well as unit prices.
+ * This is a POJO which implements accept method of Visitable interface.
+ * It extends Product class which has common features of all products
+ */
+
 package product;
 
 import visitor.Visitor;

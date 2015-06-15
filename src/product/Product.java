@@ -1,3 +1,9 @@
+/*
+ * Product represents common features of all Products
+ * This is a POJO.
+ */
+
+
 package product;
 
 public abstract class Product {
