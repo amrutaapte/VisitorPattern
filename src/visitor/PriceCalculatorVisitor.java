@@ -1,3 +1,9 @@
+/*
+ * PriceCalculatorVisitor is an implementation of Visitor interface
+ * It has different algorithms for different Products coming in as arguments
+ * It returns totalPrice to TerminalImpl
+ */
+
 package visitor;
 
 import product.PackProduct;
@@ -9,6 +15,7 @@ public class PriceCalculatorVisitor implements Visitor{
 	
 	@Override
 	public void visit(UnitProduct unitProduct) {
+	// calculate total price
 		totalPrice += unitProduct.getQty() * unitProduct.getUnitPrice();
 	}
 
@@ -20,7 +27,7 @@ public class PriceCalculatorVisitor implements Visitor{
 		
 		totalPrice += (numOfPacks * packProduct.getPackPrice() + units * packProduct.getUnitPrice());
 	}
-
+	
 	public float getTotalPrice(){
 		return totalPrice;
 	}
